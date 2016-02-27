@@ -1,96 +1,38 @@
-wypisz_tekst :-
-  write('Ala ma '),
-  write('kota'),
+write_something :-
+  write('Kuba have '),
+  write('cat'),
   nl,
-  write('w ciapki!').
+  write('which is batcat!').
 
+run_go :-
+  [class_2_interactive],
+  go.
 
-  /*
-   * family.pl
-   * taken from Bratko, 3rd ed, ch.1, p.17
-   *
-   */
+list_all_woman :-
+  [class_2_family],
+  kobieta(K),
+  write(K),
+  write(' is woman.'),
+  nl, fail.
 
-  :- dynamic(kobieta/1).
+list_one_capital :-
+  [class_2_capitals],
+  capital_of(A, B),
+  write(B),
+  write(' is capital of '),
+  write(A),
+  nl.
 
-  rodzic(kasia,robert).
-  rodzic(tomek,robert).
-  rodzic(tomek,eliza).
-  rodzic(robert,anna).
-  rodzic(robert,magda).
-  rodzic(magda,jan).
+list_all_capitals :-
+  [class_2_capitals],
+  capital_of(A, B),
+  write(B),
+  write(' is capital of '),
+  write(A),
+  nl, fail.
 
-  kobieta(kasia).
-  kobieta(eliza).
-  kobieta(magda).
-  kobieta(anna).
-
-  mezczyzna(tomek).
-  mezczyzna(robert).
-  mezczyzna(jan).
-
-  potomek(X,Y) :-
-  	rodzic(Y,X).
-
-  matka(X,Y) :-
-  	rodzic(X,Y),
-  	kobieta(X).
-
-  ojciec(X,Y) :-
-  	rodzic(X,Y),
-  	mezczyzna(X).
-
-  dziadkowie(X,Y) :-
-  	rodzic(X,Z),
-  	rodzic(Z,Y).
-
-  dziadek(X,Y) :-
-  	dziadkowie(X,Y),
-  	mezczyzna(X).
-
-  babcia(X,Y) :-
-  	dziadkowie(X,Y),
-  	kobieta(X).
-
-  siostra(X,Y) :-
-  	rodzic(Z,X),
-  	rodzic(Z,Y),
-  	kobieta(X),
-  	X \= Y.
-
-  brat(X,Y) :-
-  	rodzic(Z,X),
-  	rodzic(Z,Y),
-  	mezczyzna(X),
-  	X \= Y.
-
-  przodek(X,Y) :-
-  	rodzic(X,Y).
-
-  przodek(X,Z) :-
-  	rodzic(X,Y),
-  	przodek(Y,Z).
-
-  %%
-  madziecko(X) :-
-  	rodzic(X,_).
-
-  				% 2 razy robert? unique?
-
-  %% ex 1.3
-  szczesciarz(X) :-
-  	madziecko(X).
-
-  dwojedzieci(X) :-
-  	rodzic(X,Y),
-  	siostra(_,Y).
-
-  %% ex 1.4
-  wnuk(X,Z) :-
-  	rodzic(Y,X),
-  	rodzic(Z,Y).
-
-  %% ex 1.5
-  ciocia(X,Y) :-
-  	rodzic(Z,Y),
-  	siostra(X,Z).
+add_new_woman :-
+  [class_2_family],
+  listing(kobieta),
+  assert(kobieta(kopernik)),  % Adds term kobieta(kopernik)
+  listing(kobieta).
