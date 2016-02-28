@@ -31,3 +31,11 @@ arith_test_interesting :-
 :- A is 3.              % OK
 % :- B is A + 4.          % error
 :- A is 3, B is A + 4.  % OK
+
+arith_test_operators :-
+  write('Look, which returns true
+  - You must look at predicate body. '), nl,
+  2 + 5 \= 3 + 4,     % interesting
+  \+ 2 + 5 \= 2 + 5,  % interesting
+  2 + 5 =:= 2 + 5,
+  2 + 5 =:= 3 + 4.

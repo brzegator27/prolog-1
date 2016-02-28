@@ -1,4 +1,4 @@
-:- write('I can run whis operation
+:- write('I can run this operation
   automatically when loading file').
 
 % we inform Prolog that these predicates may change
@@ -32,7 +32,7 @@ start :-
   write(Y),
   nl, fail.
 
-start.
+start.  % what does it do or change?
 
 look_at_this_exclamation_mark :-
   write('Deleting all b predicates...'), nl,
