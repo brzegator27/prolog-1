@@ -39,3 +39,8 @@ arith_test_operators :-
   \+ 2 + 5 \= 2 + 5,  % interesting
   2 + 5 =:= 2 + 5,
   2 + 5 =:= 3 + 4.
+
+arith_test_interesting_second :-
+  X = Y,
+  X = 2,
+  write(Y).
