@@ -1,4 +1,4 @@
-present_list_unification :-
+test_list_unification :-
   X_1 = [a, b, c],
   write('X_1 = [a, b, c]: '), nl,
   write(X_1), nl, nl,   % we use indexes, because one variable
@@ -7,7 +7,7 @@ present_list_unification :-
   write('[X_2 | Y_2] = [a, b, c]:'), nl,
   write(X_2), nl,
   write(Y_2), nl, nl,
-  
+
   [[a, b], c] = [X_3 | Y_3],
   write('[[a, b], c] = [X_3 | Y_3]:'), nl,
   write(X_3), nl,
