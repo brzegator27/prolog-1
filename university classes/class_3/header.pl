@@ -2,6 +2,10 @@
 % directory with all predicates. Previous apporaches
 % showed that, afer a while it is hard to remember
 % what each predicate is doing.
+
+% underscore character at the end of predicate's name
+% denote the implementation's version's number 
+
 :- [a2b].
 :- [add_el].
 :- [belongs_to__].
