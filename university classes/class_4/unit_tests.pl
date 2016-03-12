@@ -1,4 +1,12 @@
 % unit tests of predicates
+
+% to perform unit test just type:
+
+% ?- [unit_tests].
+% ?- unit_test.
+
+% where "?-" is my console symbol on Windows
+
 :- [header].
 
 unit_test :-
