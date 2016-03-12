@@ -4,7 +4,7 @@
 % what each predicate is doing.
 
 % underscore character at the end of predicate's name
-% denote the implementation's version's number 
+% denote the implementation's version's number
 
 :- [a2b].
 :- [add_el].
@@ -12,6 +12,7 @@
 :- [belongs_to_].
 :- [belongs_to].
 :- [delete_all].
+:- [delete_one].
 :- [get_third].
 :- [insert_one].
 :- [last_element_].
