@@ -12,10 +12,11 @@
 :- [delete_first_three].
 :- [delete_last_and_first_three].
 :- [delete_last_three].
-:- [digit_to_word].
+:- [digits_to_words].
 :- [even_list].
 :- [merge_two_arr].
 :- [odd_list].
 :- [palindrome].
 :- [shift_by_one_back].
 :- [shift_by_one_front].
+:- [subset].

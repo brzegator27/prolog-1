@@ -19,4 +19,6 @@ unit_test :-
   odd_list_test,
   palindrome_test,
   shift_by_one_back_test,
-  shift_by_one_front_test.
+  shift_by_one_front_test,
+  digits_to_words_test,
+  subset_test.
