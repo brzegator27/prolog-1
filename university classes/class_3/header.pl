@@ -18,10 +18,15 @@
 :- [delete_one].
 :- [get_third].
 :- [insert_one].
+:- [my_write].
+:- [invert_list].
 :- [last_element_].
 :- [last_element].
 :- [list_belongs_to_list].
 :- [list_length].
 :- [merge_two_arr].
+:- [permute_].
+:- [permute].
+:- [plural].
 :- [replace_third_fourth].
 :- [test_lists_unification].
