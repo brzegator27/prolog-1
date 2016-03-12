@@ -8,3 +8,14 @@
 % underscore character at the end of predicate's name
 % denote the implementation's version's number
 % because we can sometimes do one thing in different ways
+
+:- [delete_first_three].
+:- [delete_last_and_first_three].
+:- [delete_last_three].
+:- [digit_to_word].
+:- [even_list].
+:- [merge_two_arr].
+:- [odd_list].
+:- [palindrome].
+:- [shift_by_one_back].
+:- [shift_by_one_front].
