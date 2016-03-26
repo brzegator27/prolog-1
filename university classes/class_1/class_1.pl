@@ -2,6 +2,7 @@ rodzic(kasia,robert).
 rodzic(tomek,robert).
 rodzic(tomek,eliza).
 rodzic(robert,anna).
+rodzic(robert_2,anna).
 rodzic(robert,magda).
 rodzic(magda,jan).
 
@@ -12,6 +13,7 @@ kobieta(anna).
 
 mezczyzna(tomek).
 mezczyzna(robert).
+mezczyzna(robert_2).
 mezczyzna(jan).
 
 % Opisanie zaleznosci rodzinnych:
