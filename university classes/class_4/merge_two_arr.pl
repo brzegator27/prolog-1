@@ -7,3 +7,12 @@ merge_two_arr([], X, X).
 % ATTENTION!!! Upper conclusion is wrong. It works without this.
 merge_two_arr([XH | XT], Y, [XH | Z]) :-
   merge_two_arr(XT, Y, Z).
+
+merge_two_arr_test :-
+  merge_two_arr([], [], []),
+  merge_two_arr([], [a], [a]),
+  merge_two_arr([a], [], [a]),
+  merge_two_arr([a], [b], [a, b]),
+  \+ merge_two_arr([a], [b], [b, a]),
+  merge_two_arr([a, b, c], [d, e], [a, b, c, d, e]),
+  merge_two_arr([a, b], [], [a, b]).

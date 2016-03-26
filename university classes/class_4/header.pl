@@ -13,10 +13,15 @@
 :- [delete_last_and_first_three].
 :- [delete_last_three].
 :- [digits_to_words].
+:- [even_list_].
 :- [even_list].
+:- [flatten].
 :- [merge_two_arr].
+:- [odd_list_].
 :- [odd_list].
 :- [palindrome].
 :- [shift_by_one_back].
 :- [shift_by_one_front].
+:- [split_more_or_less_evenly].
+:- [subset_].
 :- [subset].
