@@ -7,7 +7,7 @@
 
 % underscore character at the end of predicate's name
 % denote the implementation's version's number
-% because we can sometimes do one thing in different ways
+% because we can sometimes implement one thing in different ways
 
 % I advise snake case for names of variables
 
@@ -19,9 +19,17 @@
 % names are "sub-predicates" for the interface-predicate
 % and only interface-predicate needs them.
 
-% loading utilities:
-:- consult('../util/loader.pl').
+% New operators definitions:
+:- op(50, xfy, :).
 
-% loading sub-modules:
-:- consult('family/loader.pl').
-:- consult('flight_planner/loader.pl').
+:- [conc].
+:- [del].
+:- [deptime].
+:- [fake_database].
+:- [flight].
+:- [flyday].
+:- [member].
+:- [permutation].
+:- [queries].
+:- [route].
+:- [transfer].
